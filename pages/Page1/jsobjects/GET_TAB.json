@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "GET_TAB",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\ttab: () => {\n\t\tif(Tabs1.selectedTab == \"DAILY LEADS\"){\n\t\t\tGET_DATA.run()\n\t\t\tGET_RNR.run()\n\t\t}else if (Tabs1.selectedTab == \"DEMO REQUESTED\"){\n\t\t\tGET_DEMO_LEADS.run()\n\t\t}else if (Tabs1.selectedTab == \"OLD LEADS\"){\n\t\t\tGET_OLD_LEADS.run()\n\t\t}else if (Tabs1.selectedTab == \"DAILY REPORT\"){\n\t\t\tGET_LOGS_DATA.run()\n\t\t}\n\t},\n\tmyFun2: async () => {\n\t\t//use async-await or promises\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  },
+  "id": "Page1_GET_TAB",
+  "deleted": false,
+  "gitSyncId": "63242e5fd54cbb52f19abc01_632c25d8e3c0dc3a8257cab7"
+}

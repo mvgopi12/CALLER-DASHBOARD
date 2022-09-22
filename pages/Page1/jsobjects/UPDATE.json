@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "UPDATE",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tupdate_Leads : ()=>{\n\t\tUPDATE_LEADS.run()\n\t\tINSERT_LOGS.run()\n\t},\n\tupdate_Customer: ()=>{\n\t\tif(update_Remark.selectedOptionLabel == \"INSTALL REQUEST\" && update_Status.selectedOptionLabel == \"COMPLETE\"){\n\t\t\tUPDATE_CUSTOMER.run()\n\t\t\tshowModal(\"update_cust\")\n\t\t}else{\n\t\t\tUPDATE_CUSTOMER.run()\n\t\t\tUPDATE_CUSTOMER_LOGS.run()\n\t\t\tshowModal(\"update_cust\")\n\t\t\t\n\t\t}\n\t},\n\tADD_CUSTOMER : ()=>{\n\t\tADD_CUSTOMER.run()\n\t\tADD_CUSTOMER_LOGS.run()\n\t},\n\tUPDATE_OLDLEADS :()=>{\n\t\tUPDATE_OLD_LEADS.run()\n\t\tINSERT_OLD_LOGS.run()\n\t},\n\tUPDATE_DEMOLEADS :() =>{\n\t\tUPDATE_DEMO.run()\n\t\tINSERT_DEMO_LOGS.run()\n\t},\n\tActive : ()=>{\n\t\t\n\t},\n\tmyFun2: async () => {\n\t\t//use async-await or promises\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  },
+  "id": "Page1_UPDATE",
+  "deleted": false,
+  "gitSyncId": "63242e5fd54cbb52f19abc01_6324597ad54cbb52f19abff8"
+}
