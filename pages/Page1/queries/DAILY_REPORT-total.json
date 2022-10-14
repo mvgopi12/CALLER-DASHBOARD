@@ -20,6 +20,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "() => {\n  let count = 0;\n  count = DAILY_REPORT.Callback_count() + DAILY_REPORT.Demo_count() + DAILY_REPORT.Install_count() + DAILY_REPORT.INTERESTED_count() + DAILY_REPORT.NOTINTERESTED_count() + DAILY_REPORT.RNR_count() + DAILY_REPORT.SR_count() + DAILY_REPORT.WNum_count() + DAILY_REPORT.CDisc_count();\n  return count;\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
     },

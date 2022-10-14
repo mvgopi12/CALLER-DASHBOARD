@@ -20,6 +20,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "() => {\n  let demo_data = [];\n  for (let i = 0; i < GET_DEMO_LEADS.data.length; i++) {\n    if (GET_DEMO_LEADS.data[i].REMARK == \"DEMO REQUEST\") {\n      demo_data.push(GET_DEMO_LEADS.data[i]);\n    }\n  }\n  return demo_data;\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
     },

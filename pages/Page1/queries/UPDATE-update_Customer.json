@@ -20,6 +20,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "() => {\n  if (update_Remark.selectedOptionLabel == \"INSTALL REQUEST\" && update_Status.selectedOptionLabel == \"COMPLETE\") {\n    UPDATE_CUSTOMER.run();\n    showModal(\"update_cust\");\n  } else {\n    UPDATE_CUSTOMER.run();\n    UPDATE_CUSTOMER_LOGS.run();\n    showModal(\"update_cust\");\n  }\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },

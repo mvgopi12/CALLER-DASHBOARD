@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "get_Callback_data",
-    "fullyQualifiedName": "SELECT_DATA.get_Callback_data",
+    "name": "get_CB_data",
+    "fullyQualifiedName": "SELECT_DATA.get_CB_data",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -41,7 +41,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_SELECT_DATA.get_Callback_data",
+  "id": "Page1_SELECT_DATA.get_CB_data",
   "deleted": false,
-  "gitSyncId": "63242e5fd54cbb52f19abc01_6324a05915fcab3301bdc5db"
+  "gitSyncId": "63242e5fd54cbb52f19abc01_63450b3205671e46ee8fc6c3"
 }

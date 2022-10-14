@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "COUNT",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tLIVE_DATA_COUNT: () => {\n\t\tlet count = 0;\n\t\tfor(let i = (GET_DATA.data.length-1); i>=0;i--){\n\t\t\tif(GET_DATA.data[i].REMARKS == \"LIVE DATA\" && GET_DATA.data[i].ACTIVE == \"TRUE\"){\n\t\t\t\tcount = count + 1;\n\t\t\t}\n\t\t}\n\t\treturn count;\n\t},\n\tRNR_COUNT: ()=>{\n\t\tlet count = 0;\n\t\tfor(let i = (GET_RNR.data.length-1); i>=0;i--){\n\t\t\tif(GET_RNR.data[i].REMARKS == \"RNR\" && GET_RNR.data[i].ACTIVE == \"TRUE\"){\n\t\t\t\tcount = count + 1;\n\t\t\t}\n\t\t}\n\t\treturn count;\n\t},\n\tCALLBACK_COUNT : ()=>{\n\t\tlet count = 0;\n\t\tfor(let i = (GET_DATA.data.length-1); i>=0;i--){\n\t\t\tif(GET_DATA.data[i].REMARKS == \"CALL BACK\" && GET_DATA.data[i].ACTIVE == \"TRUE\"){\n\t\t\t\tcount = count + 1;\n\t\t\t}\n\t\t}\n\t\treturn count;\n\t},\n\tFOLLOWUPS_COUNT:()=>{\n\t\tlet count = 0;\n\t\tfor(let i = (GET_DATA.data.length-1); i>=0;i--){\n\t\t\tif(GET_DATA.data[i].REMARKS == \"INTRESTED\" || GET_DATA.data[i].REMARK == \"RNR\" || GET_DATA.data[i].REMARK == \"SWITCH OFF/NOT REACHBLE\"&& GET_DATA.data[i].ACTIVE == \"TRUE\"){\n\t\t\t\tcount = count + 1;\n\t\t\t}\n\t\t}\n\t\treturn count;\n\t},\n\tmyFun2: async () => {\n\t\t//use async-await or promises\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  },
+  "id": "Page1_COUNT",
+  "deleted": false,
+  "gitSyncId": "63242e5fd54cbb52f19abc01_6348f07b61a6260030f0b463"
+}

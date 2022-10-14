@@ -19,7 +19,8 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {}",
+      "body": "() => {\n  if (Remark.selectedOptionLabel == \"CALL BACK\" || add_Remark.selectedOptionLabel == \"CALL BACK\" || update_Remark.selectedOptionLabel == \"CALL BACK\" || demo_Remark.selectedOptionLabel == \"CALL BACK\" || old_Remark.selectedOptionLabel == \"CALL BACK\") {\n    return true;\n  } else if (Remark.selectedOptionLabel == \"RNR\" || add_Remark.selectedOptionLabel == \"RNR\" || update_Remark.selectedOptionLabel == \"RNR\" || demo_Remark.selectedOptionLabel == \"RNR\" || old_Remark.selectedOptionLabel == \"RNR\") {\n    for (let i = 0; i < GET_LOGS_DATA.data.length; i++) {}\n  } else {\n    return false;\n  }\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
     },
@@ -33,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {}"
+      "() => {\n  if (Remark.selectedOptionLabel == \"CALL BACK\" || add_Remark.selectedOptionLabel == \"CALL BACK\" || update_Remark.selectedOptionLabel == \"CALL BACK\" || demo_Remark.selectedOptionLabel == \"CALL BACK\" || old_Remark.selectedOptionLabel == \"CALL BACK\") {\n    return true;\n  } else if (Remark.selectedOptionLabel == \"RNR\" || add_Remark.selectedOptionLabel == \"RNR\" || update_Remark.selectedOptionLabel == \"RNR\" || demo_Remark.selectedOptionLabel == \"RNR\" || old_Remark.selectedOptionLabel == \"RNR\") {\n    for (let i = 0; i < GET_LOGS_DATA.data.length; i++) {}\n  } else {\n    return false;\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

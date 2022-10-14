@@ -20,6 +20,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "() => {\n  let dateString = \"17-09-2022\";\n  let date = moment(dateString).format('DD/MM/YYYY');\n  return date;\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
     },

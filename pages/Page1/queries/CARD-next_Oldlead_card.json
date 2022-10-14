@@ -20,6 +20,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "() => {\n  if (appsmith.store.current_Old_card >= appsmith.store.card.length - 1) {\n    GET_OLD_LEADS.run();\n    showAlert(\"Click OLD LEADS button to Confirm\", \"success\");\n    return appsmith.store.current_Old_card;\n  }\n  storeValue(\"current_Old_card\", appsmith.store.current_Old_card + 1);\n  return appsmith.store.current_Old_card;\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },
