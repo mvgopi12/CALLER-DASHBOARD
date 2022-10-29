@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "LIVE_DATA_COUNT",
-    "fullyQualifiedName": "COUNT.LIVE_DATA_COUNT",
+    "name": "OLDLEADS_COUNT",
+    "fullyQualifiedName": "COUNT.OLDLEADS_COUNT",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -19,13 +19,12 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  let count = 0;\n  for (let i = GET_DATA.data.length - 1; i >= 0; i--) {\n    if (GET_DATA.data[i].REMARK == \"LIVE DATA\" && GET_DATA.data[i].ACTIVE == \"TRUE\") {\n      count = count + 1;\n    }\n  }\n  return count;\n}",
+      "body": "() => {\n  let count = 0;\n  for (let i = GET_OLD_LEADS.data.length - 1; i >= 0; i--) {\n    if (GET_OLD_LEADS.data[i].REMARK == \"OLD LEADS\" && GET_OLD_LEADS.data[i].ACTIVE == \"TRUE\") {\n      count = count + 1;\n    }\n  }\n  return count;\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
     },
     "executeOnLoad": false,
-    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -35,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  let count = 0;\n  for (let i = GET_DATA.data.length - 1; i >= 0; i--) {\n    if (GET_DATA.data[i].REMARK == \"LIVE DATA\" && GET_DATA.data[i].ACTIVE == \"TRUE\") {\n      count = count + 1;\n    }\n  }\n  return count;\n}"
+      "() => {\n  let count = 0;\n  for (let i = GET_OLD_LEADS.data.length - 1; i >= 0; i--) {\n    if (GET_OLD_LEADS.data[i].REMARK == \"OLD LEADS\" && GET_OLD_LEADS.data[i].ACTIVE == \"TRUE\") {\n      count = count + 1;\n    }\n  }\n  return count;\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_COUNT.LIVE_DATA_COUNT",
+  "id": "Page1_COUNT.OLDLEADS_COUNT",
   "deleted": false,
-  "gitSyncId": "63242e5fd54cbb52f19abc01_6348f07b61a6260030f0b45f"
+  "gitSyncId": "63242e5fd54cbb52f19abc01_634931f90c4af9738a7adff6"
 }
