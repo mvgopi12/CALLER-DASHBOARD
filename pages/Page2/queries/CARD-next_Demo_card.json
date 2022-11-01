@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
-    "collectionId": "Page1_CARD",
+    "pageId": "Page2",
+    "collectionId": "Page2_CARD",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -22,7 +22,7 @@
       "body": "() => {\n  if (appsmith.store.current_Demo_card >= appsmith.store.card.length - 1) {\n    GET_DEMO_LEADS.run();\n    showAlert(\"Click DEMO button to Confirm\", \"success\");\n    return appsmith.store.current_Old_card;\n  }\n  storeValue(\"current_Demo_card\", appsmith.store.current_Demo_card + 1);\n  return appsmith.store.current_Demo_card;\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -41,7 +41,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_CARD.next_Demo_card",
+  "id": "Page2_CARD.next_Demo_card",
   "deleted": false,
-  "gitSyncId": "63242e5fd54cbb52f19abc01_632aa8a14b79967f290c9933"
+  "gitSyncId": "63242e5fd54cbb52f19abc01_635cddd62a523703d95f3265"
 }

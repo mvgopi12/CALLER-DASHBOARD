@@ -13,10 +13,10 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
-    "collectionId": "Page1_SELECT_DATA",
+    "pageId": "Page2",
+    "collectionId": "Page2_SELECT_DATA",
     "actionConfiguration": {
-      "timeoutInMillisecond": 0,
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "() => {\n  let demo_data = [];\n  if (GET_DEMO_LEADS.data && GET_DEMO_LEADS.data.length > 0) {\n    for (let i = 0; i < GET_DEMO_LEADS.data.length; i++) {\n      if (GET_DEMO_LEADS.data[i].REMARK == \"DEMO REQUEST\") {\n        demo_data.push(GET_DEMO_LEADS.data[i]);\n      }\n    }\n  }\n  return demo_data;\n}",
@@ -41,7 +41,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_SELECT_DATA.get_Demo_leads",
+  "id": "Page2_SELECT_DATA.get_Demo_leads",
   "deleted": false,
-  "gitSyncId": "63242e5fd54cbb52f19abc01_6360c7a9d33b91674415f507"
+  "gitSyncId": "63242e5fd54cbb52f19abc01_635cddd62a523703d95f3263"
 }

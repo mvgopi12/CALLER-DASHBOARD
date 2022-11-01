@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
-    "collectionId": "Page1_CARD",
+    "pageId": "Page2",
+    "collectionId": "Page2_CARD",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -41,7 +41,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_CARD.return_Current_card",
+  "id": "Page2_CARD.return_Current_card",
   "deleted": false,
-  "gitSyncId": "63242e5fd54cbb52f19abc01_6324a6daa317cf5cf28064fe"
+  "gitSyncId": "63242e5fd54cbb52f19abc01_635cddd52a523703d95f324d"
 }

@@ -1,0 +1,25 @@
+{
+  "unpublishedCollection": {
+    "name": "DATE",
+    "pageId": "Page2",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tget_today: () => {\n\t\treturn moment().format(\"DD/MM/YYYY\")\n\t},\n\tget_time:() => {\n\t\tvar today = new Date();\n\tvar time = today.getHours() + \":\" + today.getMinutes() + \":\" + today.getSeconds();\n\t\treturn time;\n},\n\tdate_format:(ISODATE)=>{\n\t\tlet date=moment(ISODATE).format('DD-MM-YYYY')\n\t\treturn date;\n\t},\n\tdate:(ISODATE)=>{\n\t\tlet date=moment(ISODATE).format('DD/MM/YYYY')\n\t\treturn date;\n\t},\n\tget_month :()=>{\n\t\t\n\t},\n\tmyFun2: async () => {\n\t\t//use async-await or promises\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Page2_DATE",
+  "deleted": false,
+  "gitSyncId": "63242e5fd54cbb52f19abc01_635cdddc2a523703d95f32e3"
+}

@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
-    "collectionId": "Page1_CARD",
+    "pageId": "Page2",
+    "collectionId": "Page2_CARD",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -22,7 +22,7 @@
       "body": "() => {\n  switch (appsmith.store.button_Number) {\n    case 0:\n      if (appsmith.store.current_Live_card >= appsmith.store.card.length - 1) {\n        GET_DATA.run();\n        showAlert(\"Click LIVE DATA button to Confirm\", \"success\");\n        return appsmith.store.current_Live_card;\n      }\n      storeValue(\"current_Live_card\", appsmith.store.current_Live_card + 1);\n      return appsmith.store.current_Live_card;\n      break;\n    case 1:\n      if (appsmith.store.current_Rnr_card >= appsmith.store.table.length - 1) {\n        GET_DATA.run();\n        showAlert(\"Click Today's RNR button to Confirm\", \"success\");\n        return appsmith.store.current_Rnr_card;\n      }\n      storeValue(\"current_Rnr_card\", appsmith.store.current_Rnr_card + 1);\n      return appsmith.store.current_Rnr_card;\n      break;\n    case 2:\n      if (appsmith.store.current_Callback_card >= appsmith.store.card.length - 1) {\n        GET_DATA.run();\n        showAlert(\"Click Callbacks button to Confirm\", \"success\");\n        return appsmith.store.current_Callback_card;\n      }\n      storeValue(\"current_Callback_card\", appsmith.store.current_Callback_card + 1);\n      return appsmith.store.current_Callback_card;\n      break;\n    case 3:\n      if (appsmith.store.current_Followups_card >= appsmith.store.card.length - 1) {\n        GET_DATA.run();\n        showAlert(\"Click Followups button to confirm\", \"success\");\n        return appsmith.store.current_Followups_card;\n      }\n      storeValue(\"current_Followups_card\", appsmith.store.current_Followups_card + 1);\n      return appsmith.store.current_Followups_card;\n      break;\n    case 4:\n      showAlert(\"Data updated\", \"success\");\n      break;\n    default:\n      return Error();\n  }\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -41,7 +41,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_CARD.next_Card",
+  "id": "Page2_CARD.next_Card",
   "deleted": false,
-  "gitSyncId": "63242e5fd54cbb52f19abc01_6324a43115fcab3301bdc60d"
+  "gitSyncId": "63242e5fd54cbb52f19abc01_635cddd62a523703d95f325a"
 }

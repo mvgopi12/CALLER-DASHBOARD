@@ -13,13 +13,13 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
-    "collectionId": "Page1_SELECT_DATA",
+    "pageId": "Page2",
+    "collectionId": "Page2_SELECT_DATA",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  let Old_data = [];\n  if (GET_OLD_LEADS.data && GET_OLD_LEADS.data.length) {\n    for (let i = 0; i < GET_OLD_LEADS.data.length; i++) {\n      if (GET_OLD_LEADS.data[i].REMARK == \"OLD LEADS\") {\n        Old_data.push(GET_OLD_LEADS.data[i]);\n      }\n    }\n  }\n  return Old_data;\n}",
+      "body": "() => {\n  let Old_data = [];\n  if (GET_OLD_LEADS.data) for (let i = 0; i < GET_OLD_LEADS.data.length; i++) {\n    if (GET_OLD_LEADS.data[i].REMARK == \"OLD LEADS\") {\n      Old_data.push(GET_OLD_LEADS.data[i]);\n    }\n  }\n  return Old_data;\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  let Old_data = [];\n  if (GET_OLD_LEADS.data && GET_OLD_LEADS.data.length) {\n    for (let i = 0; i < GET_OLD_LEADS.data.length; i++) {\n      if (GET_OLD_LEADS.data[i].REMARK == \"OLD LEADS\") {\n        Old_data.push(GET_OLD_LEADS.data[i]);\n      }\n    }\n  }\n  return Old_data;\n}"
+      "() => {\n  let Old_data = [];\n  if (GET_OLD_LEADS.data) for (let i = 0; i < GET_OLD_LEADS.data.length; i++) {\n    if (GET_OLD_LEADS.data[i].REMARK == \"OLD LEADS\") {\n      Old_data.push(GET_OLD_LEADS.data[i]);\n    }\n  }\n  return Old_data;\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_SELECT_DATA.get_Old_leads",
+  "id": "Page2_SELECT_DATA.get_Old_leads",
   "deleted": false,
-  "gitSyncId": "63242e5fd54cbb52f19abc01_632861f78d5c9931d1f71b23"
+  "gitSyncId": "63242e5fd54cbb52f19abc01_635cddd52a523703d95f3254"
 }

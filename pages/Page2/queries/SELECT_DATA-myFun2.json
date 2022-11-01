@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "get_Live",
-    "fullyQualifiedName": "SELECT_DATA.get_Live",
+    "name": "myFun2",
+    "fullyQualifiedName": "SELECT_DATA.myFun2",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,18 +13,19 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
-    "collectionId": "Page1_SELECT_DATA",
+    "pageId": "Page2",
+    "collectionId": "Page2_SELECT_DATA",
     "actionConfiguration": {
-      "timeoutInMillisecond": 0,
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  let data = [];\n  for (let i = 0; i < GET_DATA.data.length; i++) {\n    if (GET_DATA.data[i].REMARK == \"LIVE DATA\" && GET_DATA.data[i].ACTIVE == true) {\n      data.push(GET_DATA.data[i]);\n    }\n  }\n  return data;\n}",
+      "body": "async () => {}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
+    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -34,14 +35,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  let data = [];\n  for (let i = 0; i < GET_DATA.data.length; i++) {\n    if (GET_DATA.data[i].REMARK == \"LIVE DATA\" && GET_DATA.data[i].ACTIVE == true) {\n      data.push(GET_DATA.data[i]);\n    }\n  }\n  return data;\n}"
+      "async () => {}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_SELECT_DATA.get_Live",
+  "id": "Page2_SELECT_DATA.myFun2",
   "deleted": false,
-  "gitSyncId": "63242e5fd54cbb52f19abc01_6360c7a9d33b91674415f504"
+  "gitSyncId": "63242e5fd54cbb52f19abc01_635cddd52a523703d95f3240"
 }
